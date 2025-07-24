@@ -142,6 +142,3 @@ tours-to-tuscany/
 ### 🙌 Acknowledgments
 
 - Built with ❤️ using Next.js and Tailwind CSS.
-
-
-Feel free to customize this README further based on your specific project details! 😊
