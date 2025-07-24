@@ -58,7 +58,7 @@ const BookForm = () => {
                     {field.label}
                   </label>
                   <select id={field.id}
-                    className="block w-full px-6 py-3 text-secondary/50 bg-white rounded-lg focus:ring-primary focus:border-primary">
+                    className="text-sm md:text-base block w-full px-6 py-3 text-secondary/50 bg-white rounded-lg focus:ring-primary focus:border-primary">
                       {field.options?.map((option) => (
                         <option key={option.value} value={option.value}>
                           {option.label}
@@ -77,7 +77,7 @@ const BookForm = () => {
                 type={field.type}
                 id={field.id}
                 placeholder={field.placeholder}
-                className="block w-full px-6 py-3 text-secondary/50 bg-white rounded-lg focus:ring-primary focus:border-primary"
+                className="block w-full px-6 py-3 text-sm md:text-base text-secondary/50 bg-white rounded-lg focus:ring-primary focus:border-primary"
               />
             </div>
           )
