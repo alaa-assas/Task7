@@ -13,9 +13,9 @@ const AboutSection = ({ data , width, height} : { data : AboutType, width: numbe
         height={height}/>
         
         <div className='flex flex-col justify-center'>
-          <p className='font-semibold [line-height:100%] text-secondary/60 pb-1.5'>{data.subTitle}</p>
-          <h3 className='font-extrabold [line-height:100%] text-[32px] text-secondary pb-8'>{data.title}</h3>
-          <p className='leading-8 text-lg text-secondary pb-8'>{data.desc}</p>
+          <p className='font-semibold [line-height:100%] text-sm md:text-base text-secondary/60 pb-1.5'>{data.subTitle}</p>
+          <h3 className='font-extrabold [line-height:100%] text-xl md:text-[32px] text-secondary pb-8'>{data.title}</h3>
+          <p className='leading-8 text-sm md:text-lg text-secondary pb-8'>{data.desc}</p>
           <RatingCards data={data.rating} />
         </div>
     </div>

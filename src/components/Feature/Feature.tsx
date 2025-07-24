@@ -10,8 +10,8 @@ const Feature = ({data}: {data : CustomType}) => {
          transition-transform 
          duration-300 
          ease-out' src={data.img} alt={"img feature"} width={330} height={300} />
-      <p className='text-2xl [line-height:100%] font-bold text-secondary pb-4'>{data.title}</p>
-      <p className='text-lg leading-6 text-secondary'>{data.desc}</p>
+      <p className='text-base md:text-2xl [line-height:100%] font-bold text-secondary pb-4'>{data.title}</p>
+      <p className='text-sm md:text-lg leading-6 text-secondary'>{data.desc}</p>
     </div>
   )
 }

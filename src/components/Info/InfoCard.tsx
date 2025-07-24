@@ -18,7 +18,7 @@ const InfoCard = ({data} : {data : InfoType}) => {
                 alt='customer' 
                 width={60} height={60} />
         )}
-        <p className='text-center font-semibold [line-height:100%] text-xl'>{data.info}</p>
+        <p className='text-center font-semibold [line-height:100%] text-base md:text-xl'>{data.info}</p>
     </div>
   )
 }

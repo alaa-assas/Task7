@@ -48,5 +48,5 @@ export default function Counter({
     };
   }, [target, prefix, suffix]);
 
-  return <span ref={elRef} className='font-bold text-[32px] leading-8 text-primary pb-1.5'></span>;
+  return <span ref={elRef} className='font-bold text-base md:text-[32px] leading-8 text-primary pb-1.5'></span>;
 }

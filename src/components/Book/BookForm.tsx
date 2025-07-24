@@ -54,7 +54,7 @@ const BookForm = () => {
             case 'select':
               return (
                 <div key={index} className="col-span-1">
-                  <label htmlFor="name" className="pb-2 block font-semibold text-lg text-secondary [line-height:100%]">
+                  <label htmlFor="name" className="pb-2 block font-semibold text-sm md:text-lg text-secondary [line-height:100%]">
                     {field.label}
                   </label>
                   <select id={field.id}
@@ -70,7 +70,7 @@ const BookForm = () => {
           default:
           return (
             <div key={index} className="col-span-1">
-              <label htmlFor="name" className="pb-2 block font-semibold text-lg text-secondary [line-height:100%]">
+              <label htmlFor="name" className="pb-2 block font-semibold text-sm md:text-lg text-secondary [line-height:100%]">
                  {field.label}
               </label>
               <input

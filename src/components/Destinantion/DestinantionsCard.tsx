@@ -15,9 +15,9 @@ const DestinantionsCard = ({data} : {data : DestinantionType}) => {
             width={330} height={404} />
         )}
         <div className='flex flex-col gap-3'>
-            <p className='[line-height:100%] font-bold text-2xl text-secondary'>{data.title}</p>
-            <p className='font-semibold text-lg [line-height:100%] text-secondary'>
-                from <span className='text-primary text-2xl font-extrabold'>{data.price}</span>
+            <p className='[line-height:100%] font-bold text-sm md:text-2xl text-secondary'>{data.title}</p>
+            <p className='font-semibold text-sm md:text-lg [line-height:100%] text-secondary'>
+                from <span className='text-primary text-lg md:text-2xl font-extrabold'>{data.price}</span>
             </p>
             <div className='flex justify-between'>
                 <div className='flex items-center gap-1.5 text-primary'>
@@ -29,7 +29,7 @@ const DestinantionsCard = ({data} : {data : DestinantionType}) => {
                     <span className='font-semibold [line-height:100%]'>{data.nPerson}</span>
                 </div>
             </div>
-            <p className='text-lg leading-6'>
+            <p className='text-sm md:text-lg leading-6'>
                 {data.desc}
             </p>
             

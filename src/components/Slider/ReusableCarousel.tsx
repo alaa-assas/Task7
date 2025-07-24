@@ -50,7 +50,7 @@ const ReusableCarousel: React.FC<ReusableCarouselProps> = ({ items, title, class
   return (
     <section className={`max-w-[1920px] mx-auto px-[10.020833%] pt-28 ${sectionClass}`}>
       <div className='flex flex-wrap justify-between pb-[60px] gap-5'>
-        <h2 className='text-[32px] font-extrabold leading-none text-secondary'>{title}</h2>
+        <h2 className='text-xl md:text-[32px] font-extrabold leading-none text-secondary'>{title}</h2>
         <div className='flex gap-5'>
           <Sliderbtn onClick={goToPrevious} direction="prev" disabled={currentSlide === 0}/>
           <Sliderbtn onClick={goToNext} direction="next" disabled={currentSlide >= items.length - slidesToShow}/>

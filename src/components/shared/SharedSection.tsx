@@ -11,7 +11,7 @@ const SharedSection : React.FC<SharedSectionProps> = ({items, sectionClass, titl
   return (
         <section className={`max-w-[1920px] mx-auto px-[13.020833%] ${sectionClass}`}>
             {
-                title && <h2 className='text-[32px] font-extrabold [line-height:100%] text-secondary pb-16'>
+                title && <h2 className='text-base md:text-[32px] font-extrabold [line-height:100%] text-secondary pb-16'>
                             {title}
                         </h2>
             }
