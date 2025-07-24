@@ -142,5 +142,8 @@ tours-to-tuscany/
 ### 🙌 Acknowledgments
 
 - Built with ❤️ using Next.js and Tailwind CSS.
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c21d5ac619ab4951177278fb202a05923868b977
