@@ -9,7 +9,7 @@ interface SharedSectionProps {
 
 const SharedSection : React.FC<SharedSectionProps> = ({items, sectionClass, title, classStyle}) => {
   return (
-        <section className={`px-[13.020833%] ${sectionClass}`}>
+        <section className={`max-w-[1920px] mx-auto px-[13.020833%] ${sectionClass}`}>
             {
                 title && <h2 className='text-[32px] font-extrabold [line-height:100%] text-secondary pb-16'>
                             {title}

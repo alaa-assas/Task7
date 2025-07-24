@@ -13,7 +13,7 @@ export default function Home() {
   
   return (
     <div className="font-geist-sans">
-      <main className="">
+      <main>
         <Hero />
         <Destinantions />
         <AboutSection data={aboutHomeData} width={400} height={600}/>

@@ -37,5 +37,41 @@ export const DestinantionsData : DestinantionType[] =
         day: "TO BE DECIDED",
         nPerson: "5-10 PP",
         desc: "Visit the beautiful Siena and the cities that surround it to experience ..."
+    },
+    {
+        id: 5,
+        img: "/images/destination/img2.png",
+        title: "Wine tasting In Tuscany",
+        price: "34 €",
+        day: "MONDAY",
+        nPerson: "10-30 PP",
+        desc: "The real magic is here where you can enjoy the best Tuscan wine and eat ..."
+    },
+    {
+        id: 6,
+        img: "/images/destination/img4.png",
+        title: "Siena and Surroundings",
+        price: "34 €",
+        day: "TO BE DECIDED",
+        nPerson: "5-10 PP",
+        desc: "Visit the beautiful Siena and the cities that surround it to experience ..."
+    },
+    {
+        id: 7,
+        img: "/images/destination/img1.png",
+        title: "Lucca Bike Tour",
+        price: "34 €",
+        day: "EVERY DAY",
+        nPerson: "3-10 PP",
+        desc: "A tour of the city and its surroundings led by a professional guide ..."
+    },
+    {
+        id: 8,
+        img: "/images/destination/img2.png",
+        title: "Wine tasting In Tuscany",
+        price: "34 €",
+        day: "MONDAY",
+        nPerson: "10-30 PP",
+        desc: "The real magic is here where you can enjoy the best Tuscan wine and eat ..."
     }
 ]

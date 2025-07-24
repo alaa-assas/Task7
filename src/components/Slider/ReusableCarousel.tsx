@@ -21,13 +21,13 @@ const ReusableCarousel: React.FC<ReusableCarouselProps> = ({ items, title, class
 
   const goToPrevious = () => {
     const isFirstSlide = currentSlide === 0;
-    const newIndex = isFirstSlide ? items.length - 1 : currentSlide - 1;
+    const newIndex = isFirstSlide ? items.length - 1 : currentSlide - slidesToShow;
     setCurrentSlide(newIndex);
   };
 
   const goToNext = () => {
     const isLastSlide = currentSlide === items.length - 1;
-    const newIndex = isLastSlide ? 0 : currentSlide + 1;
+    const newIndex = isLastSlide ? 0 : currentSlide + slidesToShow;
     setCurrentSlide(newIndex);
   };
 
@@ -46,26 +46,21 @@ const ReusableCarousel: React.FC<ReusableCarouselProps> = ({ items, title, class
     window.addEventListener('resize', updateSlidesToShow);
     return () => window.removeEventListener('resize', updateSlidesToShow);
   }, []);
-
+  const visibleItems = items.slice(currentSlide, currentSlide + slidesToShow);
   return (
-    <section className={`px-[13.020833%] pt-28 ${sectionClass}`}>
+    <section className={`max-w-[1920px] mx-auto px-[10.020833%] pt-28 ${sectionClass}`}>
       <div className='flex flex-wrap justify-between pb-[60px] gap-5'>
         <h2 className='text-[32px] font-extrabold leading-none text-secondary'>{title}</h2>
         <div className='flex gap-5'>
-          <Sliderbtn onClick={goToPrevious} direction="prev" />
-          <Sliderbtn onClick={goToNext} direction="next" />
+          <Sliderbtn onClick={goToPrevious} direction="prev" disabled={currentSlide === 0}/>
+          <Sliderbtn onClick={goToNext} direction="next" disabled={currentSlide >= items.length - slidesToShow}/>
         </div>
       </div>
 
        <div className={classStyle}>
-        {Array.from({ length: slidesToShow }).map((_, index) => {
-          const itemIndex = currentSlide * slidesToShow + index;
-          return itemIndex < items.length ? (
-            <div key={index}>
-              {items[itemIndex]}
-            </div>
-          ) : null;
-        })}
+         {visibleItems.map((item, index) => (
+          <div key={index}>{item}</div>
+        ))}
       </div>
     </section>
   );

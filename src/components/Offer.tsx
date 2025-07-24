@@ -5,7 +5,7 @@ import ButtonCustom from "./shared/ButtonCustom"
 const Offer = () => {
     
     return (
-        <div className='relative px-[13.020833%] py-16 bg-cover bg-center bg-[url(/images/info/bg-section.png)]'>
+        <div className='max-w-[1920px] mx-auto relative px-[13.020833%] py-16 bg-cover bg-center bg-[url(/images/info/bg-section.png)]'>
            
            <Image 
                 className='inline-block md:absolute z-10 bottom-0 right-[13.020833%]'
